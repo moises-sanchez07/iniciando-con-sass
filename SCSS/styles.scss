@@ -1,0 +1,187 @@
+// Hola Emma, cómo estás? acá están algunas preguntas que me han surgido :)
+// Tengo como 3 secciones con degradados en mi pagina y solo quiero uno a lo largo de toda la misma, cómo logro eso?
+// no sé por qué tengo un scroll horizontal indeseado
+// our courses quisiera que no tuviera un fondo distinto
+// quiero poner un texto de párrafo abajo del titulo principal del .hero pero aparece muy abajo, en este momento está en forma de comentario por si lo quieres habilitar
+// los script de bootstrap están bien colocados abajo antes del cierre del body?
+* {
+    margin: 0;
+    padding: 0;
+    
+
+    font-family: 'Lato';
+    font-size: 62.5%;
+    color: white;
+  
+    
+    
+
+
+}
+
+
+
+
+
+
+.hero {
+    height: 85vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), #000000), url("maestros.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-bottom: 4rem;
+    
+}
+
+
+
+.hero__text{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    
+    transform: translate(-50%, -50%);
+    
+    
+    h1 {
+        
+        font-size: 7rem;
+        font-weight: bold;
+        text-shadow: 0 0.08em 0.1em #000000ad;
+    }
+    p {
+        
+        font-size: 2.2rem;
+        line-height: 1.1;
+        font-weight: 300;
+       
+        
+    }
+
+}
+
+.courses {
+        
+    display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    // grid-template-rows: repeat(2, 1fr);
+    grid-gap: 0px;
+    padding-left: 10%;
+    padding-right: 10%;
+    // lo siguiente es para que haya mas espacio abajo por ahora
+    padding-bottom: 500px;
+   
+   
+}
+
+.under-hero{
+    background-image: linear-gradient(black, #475157);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    height: 100%;
+    
+
+}
+
+.courses-section--title {
+
+    font-size: 3.6rem;
+    font-weight: bold;
+    grid-column: 1 /-1;
+    margin: auto;
+    padding-bottom: 5rem;
+    position: relative;
+
+    &h1::after{
+       
+        display: block;
+        background-color: white;
+        height: 200px;
+        width: 20px;
+    }
+   
+
+
+}
+
+.course__img{
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+.course {
+    display: inline-block;
+    // max-width: 300px;
+    // max-height: 500px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    }
+
+
+
+.course__btn {
+    
+    font-size: 1.6rem;
+    border-radius: 4px;
+    background-color: white;
+    color: #2e3336;
+    height: 40px;
+    margin-top: 1.3rem;
+       
+
+}
+
+.course__title {
+    font-size: 2.2rem;
+    position: relative;
+    align-self: flex-start;
+    
+    
+}
+
+.course__description{
+    font-style: italic;
+    font-size: 1.8rem;
+}
+
+.nav-container{
+    background: black;
+    border: none;
+    // position: fixed;
+    z-index: 3;
+}
+
+.nav > li > a{
+    color: white;
+    font-size: 2rem;;
+}
+
+div.modal-content{
+    background: grey;
+    .modal-footer{
+        .btn-primary, .btn-secondary{
+            background-color: black;
+        }
+    
+        .btn-secondary{
+            background-color: blac;
+        }
+        
+        
+
+    }
+
+
+}
+
+section.courses {
+    background-color: transparent;
+}
