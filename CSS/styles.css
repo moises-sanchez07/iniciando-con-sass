@@ -2,8 +2,23 @@
   margin: 0;
   padding: 0;
   font-family: 'Lato';
-  font-size: 62.5%;
-  color: white; }
+  font-size: 62.5%; }
+
+.nav-container {
+  background: black;
+  border: none;
+  z-index: 3; }
+
+.nav > li > a {
+  color: white;
+  font-size: 2rem; }
+
+div.modal-content {
+  background: grey; }
+  div.modal-content .modal-footer .btn-primary, div.modal-content .modal-footer .btn-secondary {
+    background-color: black; }
+  div.modal-content .modal-footer .btn-secondary {
+    background-color: blac; }
 
 .hero {
   height: 85vh;
@@ -23,19 +38,13 @@
   .hero__text h1 {
     font-size: 7rem;
     font-weight: bold;
-    text-shadow: 0 0.08em 0.1em #000000ad; }
+    text-shadow: 0 0.08em 0.1em #000000ad;
+    color: white; }
   .hero__text p {
     font-size: 2.2rem;
     line-height: 1.1;
-    font-weight: 300; }
-
-.courses {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-gap: 0px;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 500px; }
+    font-weight: 300;
+    color: white; }
 
 .under-hero {
   background-image: linear-gradient(black, #475157);
@@ -46,9 +55,10 @@
 .courses-section--title {
   font-size: 3.6rem;
   font-weight: bold;
+  color: white;
   grid-column: 1 /-1;
   margin: auto;
-  padding-bottom: 5rem;
+  padding-bottom: rem;
   position: relative; }
   .courses-section--titleh1::after {
     display: block;
@@ -56,49 +66,205 @@
     height: 200px;
     width: 20px; }
 
-.course__img {
-  max-width: 300px;
-  border-radius: 5px; }
+.courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding-left: 10%;
+  padding-right: 10%;
+  row-gap: 50px; }
+  .coursesa {
+    display: block; }
 
 .course {
   display: inline-block;
+  margin-top: 30%;
   margin: auto;
   position: relative;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  max-width: 300px; }
+  .course:hover {
+    animation-name: course-card;
+    animation-duration: 1s; }
+  .course > a {
+    color: white; }
+    .course > a:hover {
+      text-decoration: none;
+      color: white; }
 
-.course__btn {
+.course__img {
+  max-width: 300px;
+  min-width: 300px;
+  min-height: 300px;
+  max-height: 300px;
+  border-radius: 5px;
+  object-fit: contain; }
+
+.course__title {
+  font-size: 2.2rem;
+  position: relative;
+  align-self: flex-start;
+  color: white; }
+
+.course__description {
+  font-style: italic;
+  font-size: 1.8rem;
+  max-width: 300px;
+  color: white; }
+  .course__description:hover {
+    text-decoration: none; }
+
+.course__btn, .course__btn--cart {
   font-size: 1.6rem;
   border-radius: 4px;
   background-color: white;
   color: #2e3336;
   height: 40px;
   margin-top: 1.3rem; }
+  .course__btn:hover, .course__btn--cart:hover {
+    background-color: transparent;
+    color: white;
+    border: white;
+    border-radius: 4px;
+    border-style: solid; }
 
-.course__title {
-  font-size: 2.2rem;
-  position: relative;
-  align-self: flex-start; }
+#see-more__courses {
+  display: flex;
+  flex-direction: column; }
 
-.course__description {
-  font-style: italic;
-  font-size: 1.8rem; }
-
-.nav-container {
-  background: black;
-  border: none;
-  z-index: 3; }
-
-.nav > li > a {
+#see-more__courses--btn {
+  margin-top: 45px;
+  align-self: center;
+  height: 70px;
+  font-size: 1.6rem;
+  background-color: transparent;
+  padding: 10px;
+  margin-bottom: 45px;
   color: white;
-  font-size: 2rem; }
+  border-radius: 4px; }
+  #see-more__courses--btn:hover {
+    color: black;
+    background-color: white; }
 
-div.modal-content {
-  background: grey; }
-  div.modal-content .modal-footer .btn-primary, div.modal-content .modal-footer .btn-secondary {
-    background-color: black; }
-  div.modal-content .modal-footer .btn-secondary {
-    background-color: blac; }
+#see-more__courses--link {
+  align-self: center; }
+  #see-more__courses--link:hover {
+    color: white; }
 
-section.courses {
-  background-color: transparent; }
+footer {
+  height: 300px;
+  background-color: black; }
+
+.course-example {
+  background-image: linear-gradient(black, #475157);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px; }
+
+.course-page__title h1 {
+  font-size: 4rem;
+  color: white; }
+
+.course-page__description {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.788); }
+
+.course-page_instructor {
+  display: flex;
+  margin-top: 30px; }
+  .course-page_instructor img {
+    max-width: 80px;
+    border-radius: 100%; }
+  .course-page_instructor h5 {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    margin-left: 30px;
+    align-self: center; }
+
+.course-page__contents h3 {
+  font-size: 30px;
+  color: white;
+  margin-top: 30px; }
+
+body.course-example {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 0.8fr 0.5fr;
+  overflow-x: hidden; }
+
+.whole-course {
+  grid-column: 3 / 5;
+  margin-left: 10%; }
+
+.sidecard {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.061);
+  background-image: #475157;
+  border-radius: 14px; }
+  .sidecard img {
+    align-self: center;
+    max-width: 100%;
+    border-radius: 14px 14px 0 0; }
+  .sidecard .btn-buy__group {
+    display: flex;
+    object-fit: cover;
+    padding: 0 7%;
+    justify-content: space-between;
+    width: 86%; }
+  .sidecard .course__btn {
+    width: 73%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #475157;
+    letter-spacing: 1px; }
+    .sidecard .course__btn:hover {
+      color: white; }
+  .sidecard .course__btn--cart {
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 20%;
+    height: 50px; }
+  .sidecard h1 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 0 7%; }
+
+.course-info__items {
+  font-size: 40px; }
+
+.mb-15px {
+  margin-bottom: 15px; }
+
+.ml-15px {
+  margin-left: 15px; }
+
+.mt-15px {
+  margin-top: 15px; }
+
+.ml-30px {
+  margin-left: 30px; }
+
+.fz-30px {
+  font-size: 20px; }
+
+.fz-17px {
+  font-size: 17px; }
+
+.fs-ital {
+  font-style: italic; }
+
+.li-s-no {
+  list-style: none; }
+
+.padd-10-per-lr {
+  padding-left: 10%;
+  padding-right: 10%; }
+
+.clr-white {
+  color: white; }

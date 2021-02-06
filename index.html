@@ -8,23 +8,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-
+    <script src="https://use.fontawesome.com/556c10569a.js"></script>
 </head>
 <body>
+                      <!-- NAVIGATION BAR -->
     <nav>
         <div class="nav-container container-fluid">
             <div class="navbar-header">
-                <img class="navbar-brand" src="Recurso 2.png" alt="">
+                <img class="navbar-brand" src="/images/Recurso 2.png" alt="">
             </div>
-          
             <ul class="nav navbar-nav navbar-right">
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="#">Courses</a></li>
                 <li data-toggle="modal" data-target="#exampleModal"><a href="#">Login</a></li>
                 <li><a href="#">Register</a></li>
             </ul>
-            
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
@@ -44,45 +42,81 @@
                   </div>
                 </div>
               </div>
-
         </div>
     </nav>
-
+                    <!-- MAIN SECTION -->
     <main>
-      <section class="home">
+                    <!-- HERO -->
         <div class="hero">
-      
           <div class="hero__text">
                 <h1>Professional dance education</h1>
                 <p>Building dancers</p>
           </div>
-          </div>
-        </section>
+        </div>
+                    <!-- COURSES SECTION -->
         <section class="under-hero"> 
           <div class="courses">
             <h1 class="courses-section--title">COURSES</h1>
             <div class="course">
-                <img class="course__img" src="boogaloo.jpg" alt="">
-                <h3 class="course__title">Course title</h3>
+              <a href="/intro-salsa-course.html">
+                <img class="course__img" src="/images/salsa-dancing-intro1.jpg" alt="">
+                <h3 class="course__title">Salsa dancing introduction</h3>
                 <p class="course__description">This is the description of the course</p>
+              </a>
                 <button class="course__btn">Buy now</button>
+                <!-- recordar poner botones de carrito de compra al lado de todos los "buy" -->
             </div>
+      
             <div class="course">
-                <img class="course__img" src="boogaloo.jpg" alt="">
+              <a href="/courses.html">
+                <img class="course__img" src="/images/boogaloo.jpg" alt="">
                 <h3 class="course__title">Course title</h3>
                 <p class="course__description">This is the description of the course</p>
+              </a>
                 <button class="course__btn">Buy now</button>
-            </div><div class="course">
-                <img class="course__img" src="boogaloo.jpg" alt="">
+            </div>
+            
+
+            <div class="course">
+                <img class="course__img" src="/images/boogaloo.jpg" alt="">
                 <h3 class="course__title">Course title</h3>
                 <p class="course__description">This is the description of the course</p>
                 <button class="course__btn">Buy now</button>
             </div>
+
+            <div class="course">
+              <img class="course__img" src="/images/boogaloo.jpg" alt="">
+              <h3 class="course__title">Course title</h3>
+              <p class="course__description">This is the description of the course</p>
+              <button class="course__btn">Buy now</button>
+            </div>
+
+            <div class="course">
+              <img class="course__img" src="/images/boogaloo.jpg" alt="">
+              <h3 class="course__title">Course title</h3>
+              <p class="course__description">This is the description of the course</p>
+              <button class="course__btn">Buy now</button>
+            </div> 
+
+            <div class="course">
+              <img class="course__img" src="/images/boogaloo.jpg" alt="">
+              <h3 class="course__title">Course title</h3>
+              <p class="course__description">This is the description of the course</p>
+              <button class="course__btn">Buy now</button>
+            </div> 
 
           </div>
-
+          <!-- SEE MORE COURSES BTN -->
+          <div id="see-more__courses">
+            <a id="see-more__courses--link" href="/courses.html"><button id= "see-more__courses--btn">SEE MORE COURSES</button></a>
+          </div>
+          <footer>
+            Hello
+          </footer>
         </section>
+      
     </main>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
