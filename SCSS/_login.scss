@@ -1,0 +1,72 @@
+// LOGIN PAGE
+
+#login__page {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+}
+
+#login__form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    grid-column: 2;
+    align-self: center;
+    justify-self: center;
+   
+   input {
+       font-size: 20px;
+       text-align: center;
+       border-radius: 4px;
+       margin-bottom: 20px;
+       height: 50px;
+       border: none;
+       
+   }
+
+   #submit__btn {
+
+
+       &:hover {
+           color: white;
+           border: solid 3.5px white;
+          
+           
+           background-color: transparent;
+       }   
+
+   }
+
+   #form__footer {
+       align-self: center;
+       font-size: 30px;
+     
+       a {
+           text-decoration: none;
+           color: white;
+           &:hover {
+               color: black;
+           }
+       }
+
+       p {
+           margin-top: 20px;
+           font-size: 15px;
+           font-style: italic;
+           color: white;
+           
+           a {
+               font-size: 15px;
+              
+               margin-left: 10px;
+               font-style: normal;
+               
+           }
+       }
+   }
+
+    
+
+    
+}

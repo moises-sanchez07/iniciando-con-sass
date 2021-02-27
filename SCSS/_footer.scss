@@ -1,0 +1,23 @@
+// FOOTER
+
+footer {
+    height: 250px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+    li {
+        
+        display: inline-block;
+        margin-left: 15px;
+        text-align: center;
+    }
+
+    #teste {
+        .testa{
+            display: block;
+        }
+    }
+}

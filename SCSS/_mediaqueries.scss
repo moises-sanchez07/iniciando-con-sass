@@ -1,0 +1,23 @@
+
+@media (max-width: 900px)  {
+
+    // #course__example {
+   
+        
+    // }
+    
+    div#sidecard {
+       position: relative;
+       grid-row: 2 / 4;
+       grid-row: 3;
+       min-width: 300px;
+       left: 0;
+
+    }
+
+    .whole-course {
+        grid-column: 2 / 4;
+        margin-left: 0;
+    }
+
+}

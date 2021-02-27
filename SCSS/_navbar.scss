@@ -1,0 +1,57 @@
+// NAV BAR
+
+
+#navbar {
+    
+    border-radius: 0;
+    margin-bottom: 0;
+    
+    a.navbar-brand {
+         
+            margin-right: 50px;
+        
+       
+    }
+    
+    .navbar-toggler {
+
+        border-color: white;
+
+        .navbar-toggler-icon{
+            color: white;
+        }
+    }
+    
+
+    .nav-item {
+
+
+
+        .nav-link {
+            font-size: 15px;
+            color: white;
+            
+            .active {
+                color: red;
+            }
+
+        }
+    }    
+
+   
+
+    .nav-item  {
+        margin-right: 30px;
+        color: white;
+        &:hover {
+            text-decoration: none;
+            color: #475157;
+
+        }
+      
+    }
+    
+}
+.custom-toggler.navbar-toggler { 
+    border-color: lightgreen; 
+} 
